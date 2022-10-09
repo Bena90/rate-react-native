@@ -3,6 +3,8 @@ import { Text, View } from 'react-native'
 import RepositoryList from './RepositoryList.jsx'
 import AppBar from './AppBar.jsx'
 import { Route, Switch, Redirect } from 'react-router-native'
+import Login from '../pages/Login.jsx'
+
 
 const Main = () => {
   return (
@@ -13,7 +15,7 @@ const Main = () => {
                 <RepositoryList />
             </Route>
             <Route path='/signin'>
-                <Text>Working on it</Text>
+                <Login/>
             </Route>
             <Redirect to='/' />
         </Switch>
